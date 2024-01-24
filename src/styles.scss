@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --accent: #00d887;
+  --foreground: #e9fff1;
+  --background: #151a21;
+  --background-2: #242930;
+  --square-size: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  //   width: calc((var(--square-size) * 4) + 40px);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 350px) {
+  :root {
+    --square-size: 75px;
+  }
+}
+@media screen and (max-width: 250px) {
+  :root {
+    --square-size: 50px;
+  }
+}
